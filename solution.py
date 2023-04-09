@@ -8,7 +8,7 @@ def solution(x: np.array, y: np.array) -> bool:
     import scipy.stats as sts
     stat, p = sts.ttest_ind(x, y)
     alpha = 0.03
-    answer = p < alpha
+    answer = p > alpha
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
